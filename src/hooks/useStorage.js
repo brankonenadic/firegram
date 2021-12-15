@@ -3,14 +3,14 @@ import { projectStorage } from '../firebase/config';
 
 const useStorage = (file) => {
 
-    const [progres, setprogres] = useState(null);
+    const [progres, setprogres] = useState(0);
     const [error, seterror] = useState(null);
     const [url, seturl] = useState(null);
 
     useEffect(() => {
         const storageRef = projectStorage.ref(file.name);
         storageRef.put(file).on('state_change', (snap) => {
-            let percentage = (snao.bytesTransferred / snap.totalBytes) * 100;
+            let percentage = (snap.bytesTransferred / snap.totalBytes) * 100;
             setprogres(percentage);
         }, (err) => {
             seterror(err);
@@ -24,4 +24,4 @@ const useStorage = (file) => {
     return (progres,url,error);
 }
 
-export default useStorage
+export default useStorage;
