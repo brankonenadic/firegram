@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 const UploadForm = () => {
-
-const changeHandler = () => {
-    
-};
+    const [file, setfile] = useState(null);
+    const changeHandler = (e) => {
+        let selected = e.target.files[0];
+    };
 
     return (
         <form>
