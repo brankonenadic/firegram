@@ -1,10 +1,10 @@
 import React from 'react';
 import useStorage from '../hooks/useStorage';
 
-const ProgresBar = ({file, setFile}) => {
+const ProgresBar = ({file, setfile}) => {
 
-const [url, progress] = useStorage(file);
-console.log(url,progress);
+const [url, progres] = useStorage(file);
+console.log(url,progres);
     return (
         <div className='progress-bar'>
         Progress    
