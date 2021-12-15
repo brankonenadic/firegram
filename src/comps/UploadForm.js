@@ -2,9 +2,9 @@ import React from 'react'
 
 const UploadForm = () => {
     return (
-        <div>
-            
-        </div>
+        <form>
+            <input type="file" onChange={changeHandler} />
+        </form>
     )
 }
 
