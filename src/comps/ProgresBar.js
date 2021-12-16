@@ -3,8 +3,8 @@ import useStorage from '../hooks/useStorage';
 
 const ProgresBar = ({file, setfile}) => {
 
-const [url, progres] = useStorage(file);
-console.log(url,progres);
+const {progres, url} = useStorage(file);
+console.log(progres, url);
     return (
         <div className='progress-bar'>
         Progress    
