@@ -38,5 +38,6 @@ const firebaseApp = firebase.initializeApp(firebaseConfig);
 const projectFirestore = firebaseApp.firestore();
 
 const projectStorage = firebase.storage();
-
+console.log(projectStorage);
+console.log(projectFirestore);
 export { projectStorage, projectFirestore };
