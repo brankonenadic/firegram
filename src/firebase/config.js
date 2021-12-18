@@ -22,7 +22,7 @@ console.log(projectStorage);
 console.log(projectFirestore);
 export { projectStorage, projectFirestore }; */
 
-import firebase from "firebase";
+import firebase from "firebase/app";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDZNp5IjYRE2bZ2-6Q3LAWQTMAoRbtQ0hE",
