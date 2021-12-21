@@ -17,7 +17,5 @@ const app = initializeApp({
 
 const projectStorage = getStorage(app);
 const projectFirestore = getFirestore(app);
-console.log(app);
-console.log(projectStorage);
-console.log(projectFirestore);
+
 export { projectStorage, projectFirestore }; 

@@ -2,7 +2,7 @@ import React from 'react';
 import useStorage from '../hooks/useStorage';
 
 const ProgresBar = ({file, setfile}) => {
-
+    console.log(file);
 const {progres, url} = useStorage(file);
 console.log(progres, url);
     return (
